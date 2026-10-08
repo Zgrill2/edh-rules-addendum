@@ -2,17 +2,25 @@
 
 ## Baseline
 
-All standard Bracket 3 rules still apply, including the 3 Game Changer maximum, no mass land denial, and no chaining extra turns. There are two exceptions. The guideline against winning before turn 6 is removed. The guideline against early-game 2-card combos is replaced by Rule 3 below. Where these rules conflict with official Bracket 3 guidance, these rules win.
-
-The clarifications in Rules 1 and 2 are in addition to the official MLD and Extra Turn rules and do not replace all MLD/Extra Turn restrictions.
+This is an addendum to Bracket 3. All official Bracket 3 rules still apply, including the 3 Game Changer maximum, except that the guideline against winning before turn 6 is removed. Rules 1–3 below clarify the official guidance on mass land denial, chaining extra turns, and early-game 2-card combos. Where a rule here conflicts with official Bracket 3 guidance, the rule here wins. All other official guidance stays in effect.
 
 ## Rule 1: Mass Land Denial
 
-If a spell or ability would remove 2+ opponents lands or keep them tapped indefinitely (e.g., winter orb, back to basics), instead only 1 of those lands is removed. You may not remove more than 1 land per turn, if an ability does so that land is instead not removed and the land is treated as not removed for the purpose of any conditional effects that may occur.
+This rule only governs opponents' lands. You may do whatever you want to your own lands.
+
+- **1.1** No more than one land owned and controlled by an opponent may leave the battlefield each turn as a result of spells and abilities you control.
+- **1.2** If more would leave, the controller of the spell or ability chooses which one leaves. If one has already left this turn, none leave. Lands that don't leave stay on the battlefield and are treated as never having left for any effect that checks.
+- **1.3** Cards that keep lands tapped or change what mana lands produce (e.g., Winter Orb, Blood Moon, Back to Basics) are still not allowed, as in official Bracket 3.
+
+Examples:
+
+- **Terastodon targeting one land from each of three opponents:** only one is destroyed, and its controller gets the only Elephant.
+- **Terastodon targeting three of your own lands:** all three are destroyed.
 
 ## Rule 2: Extra Turns
 
-If a spell or ability would provide 2+ turns instead only 1 of those turns is taken. If you are in an extra turn you may not take an additional consecutive turn.
+- **2.1** If you would take an extra turn immediately after an extra turn of yours, that turn is skipped instead. If a spell or ability would give you 2+ extra turns in a row, you take the first and skip the rest.
+- **2.2** Extra turns that aren't back to back are fine. For example, Lighthouse Chronologist gives you an extra turn after each opponent's turn, which is allowed.
 
 ## Rule 3: Combos
 
@@ -57,7 +65,7 @@ An outcome is deterministic if it doesn't depend on random results, hidden infor
 
 ### 3.7 Sequence
 
-A combanation of spells and/or abilities that resolve within the same turn.
+A combination of spells and/or abilities that resolve within the same turn.
 
 ### 3.8 Loop Limit (gameplay restriction)
 
@@ -66,6 +74,7 @@ A combanation of spells and/or abilities that resolve within the same turn.
 - It applies whether or not the loop has a payoff or would win the game.
 - Each player's turn counts separately.
 - Both cards may be in your deck.
+- This applies even if the loop is made of mandatory triggered abilities. After one iteration the loop stops, and any further triggered abilities from that loop are removed from the stack.
 
 ### 3.9 No Two-Card Deterministic Win
 
@@ -81,7 +90,7 @@ Check this with 3.8 in effect. A loop that would only win by repeating is govern
 
 ### Examples
 
-- **Thassa's Oracle + Tainted Pact:** banned by 3.9.
+- **Thassa's Oracle + Tainted Pact:** may not be executed.
 - **Kiki-Jiki + Zealous Conscripts:** a restricted pair. Legal, but only one iteration per turn under 3.8, so it makes one hasty token.
 - **Kiki-Jiki + Zealous Conscripts + Bloom Tender + Deadeye Navigator:** limited to one iteration per turn under 3.8, because the loop uses both cards of a restricted pair. The extra pieces don't change that.
 - **Sanguine Bond + Exquisite Blood:** a restricted pair, limited to one iteration per turn.
