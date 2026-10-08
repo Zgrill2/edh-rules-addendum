@@ -1,0 +1,5 @@
+This document started as an experiment to see if we could remove the turn 6 restriction and disambiguate the rules in bracket 3 since there was some debates amongs our play group, and also commonly in online discourse such as Reddit, around what the rules mean.
+
+We decided our experiment should be desiged with the framing as if it could be mass adoped (i.e., for casual or tournament play):
+- No additions to the game changers list. Reason being nobody wants to see a gamechangers list with 100 new cards and it was statistically unlikely with the sample of games we were able to play that we would solve the meta and therefore know which cards to move to gamechangers
+- Changes to the rules should be in the form of a rules addendum, should use existing magic rules terminology wherever possible, and be easily rulable by a judge. Reasoning here is to disambiguate the rules so that interpretive disagreements between players would be as unlikely as possible.
