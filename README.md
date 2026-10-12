@@ -37,16 +37,22 @@ Further details:
 - A land counts as a piece if the sequence needs anything from it that a basic land couldn't provide. Examples: being a creature, a non-mana ability, extra mana, or being a specific named card.
 - Tokens are not pieces, but the card that creates them is a piece if the sequence needs those tokens.
 - Cards that are only drawn, milled, exiled, or revealed without being used are not pieces. For example, the cards Tainted Pact exiles are not pieces.
+- **Conditions.** Conditions are not pieces. Only these count as conditions:
+  - permanents that a piece counts by card type or subtype, such as the Elves Priestess of Titania counts, the creatures Gaea's Cradle counts, or the artifacts an affinity for artifacts cost counts;
+  - counters on a piece, such as the +1/+1 counters Animar or Gyre Sage need; and
+  - nonland permanents that tap for mana, when a piece untaps them, such as the mana rocks and dorks Dramatic Reversal untaps.
+
+  Anything else the sequence needs, such as a card that gives haste, is a piece.
 - **Chained searches.** A search is chained if a card found by an earlier search in the same sequence is used to perform, pay for, or enable it. Examples: the found card searches, is sacrificed or discarded as a cost of the next search, or produces the mana for it. If a sequence contains a chained search, cards found by searches during that sequence are not pieces.
 
 ### 3.2 Baseline Test
 
 To check whether a set of cards forms a combination, assume all of the following:
 
-- Your side of the game contains only those cards, plus any number of basic lands of any types.
+- Your side of the game contains only those cards, plus any number of basic lands of any types, plus as many conditions (3.1) as the sequence needs.
 - One starting event occurs if the sequence needs one to begin. Examples: one instance of life gain, damage, a creature dying, or a spell being cast.
 - Opponents take no actions and control nothing relevant.
-- Basic lands may pay any costs to start the sequence. For a loop, though, once the first iteration is complete, every later iteration must generate everything it spends (mana, life, cards, permanents, and so on) from its pieces alone.
+- Basic lands may pay any costs to start the sequence. For a loop, though, once the first iteration is complete, every later iteration must generate everything it spends (mana, life, cards, permanents, and so on) from its pieces and conditions alone.
 
 ### 3.3 Two-Card Loop Restrictions
 
@@ -85,7 +91,8 @@ This rule is for combos that win without looping, like Thassa's Oracle + Tainted
 - **Sanguine Bond + Exquisite Blood:** a two-card loop, limited to one iteration per turn even though its triggers are mandatory.
 - **Basalt Monolith + Rings of Brighthearth:** a two-card loop. Basics pay to start it, and each iteration then nets mana. Adding a mana sink as a third card doesn't lift the limit.
 - **Deadeye Navigator + Peregrine Drake:** a two-card loop. Each flicker costs 2, and Drake untaps 5 basics, so every iteration pays for itself.
-- **Isochron Scepter + Dramatic Reversal:** not a two-card loop. Dramatic Reversal can't untap basic lands, so later iterations can't pay for themselves. Adding Mana Vault makes a three-card loop, which is unrestricted.
+- **Isochron Scepter + Dramatic Reversal:** a two-card loop. The mana rocks and dorks it untaps are conditions, not pieces, so it's limited to one iteration per turn. Adding Mana Vault doesn't lift the limit, because Mana Vault is also just a mana rock.
+- **Priestess of Titania + Umbral Mantle:** a two-card loop. The Elves are conditions, so with enough of them each untap nets mana, and it's limited to one iteration per turn.
 - **Dryad Arbor + bestowed Springheart Nantuko:** not an unbounded loop. Each iteration costs {1}{G} that the loop doesn't generate, so it stops once your basics run out.
 - **Dryad Arbor + Springheart Nantuko + Badgermole Cub + a haste source:** unrestricted. Dryad Arbor counts as a piece because basic lands aren't creatures, so this is four pieces, and no pair among them loops on its own.
 
