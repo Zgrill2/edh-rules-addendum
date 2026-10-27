@@ -95,6 +95,11 @@ This rule is for combos that win without looping, like Thassa's Oracle + Tainted
 - **Priestess of Titania + Umbral Mantle:** a two-card loop. The Elves are conditions, so with enough of them each untap nets mana, and it's limited to one iteration per turn.
 - **Dryad Arbor + bestowed Springheart Nantuko:** not an unbounded loop. Each iteration costs {1}{G} that the loop doesn't generate, so it stops once your basics run out.
 - **Dryad Arbor + Springheart Nantuko + Badgermole Cub + a haste source:** unrestricted. Dryad Arbor counts as a piece because basic lands aren't creatures, so this is four pieces, and no pair among them loops on its own.
+- **Gravecrawler + Warren Soultrader:** not an unbounded loop. Each sacrifice costs 1 life that the loop doesn't generate (3.2), so it stops once you run out of life.
+- **Gravecrawler + Warren Soultrader + Zulaport Cutthroat:** unrestricted. Zulaport Cutthroat gains back the life each sacrifice costs, so the loop pays for itself, but only with all three pieces.
+- **J. Jonah Jameson + Aggravated Assault, or The Reaver Cleaver + Aggravated Assault:** not a two-card loop. The creatures that attack to make the Treasures aren't conditions (3.1), so they're pieces too.
+- **Chain of Smog, targeting yourself:** a one-card loop, so it counts as a two-card loop and is limited to one iteration per turn (3.3).
+- **Chain of Smog, going back and forth with an opponent:** unrestricted. The loop depends on an opponent choosing to copy it each time, and the Baseline Test assumes opponents take no actions (3.2), so it isn't a two-card loop.
 
 **Deterministic outcomes and searches**
 
